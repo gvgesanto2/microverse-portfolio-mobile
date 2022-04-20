@@ -1,3 +1,23 @@
+:root {
+  /* Color Palette */
+  --color-primary-50: #ebebff;
+  --color-primary-100: #cbcdff;
+  --color-primary-300: #7f8cff;
+  --color-primary-400: #6070ff;
+
+  --color-neutral-400: #505f79;
+  --color-neutral-600: #344563;
+  --color-neutral-800: #172b4d;
+
+  --white: #fff;
+
+  --color-primary: var(--color-primary-400);
+
+  /* Text */
+  --text-primary: var(--color-neutral-600);
+  --text-primary-dark: var(--color-neutral-800);
+}
+
 /* Resetting */
 *,
 *::before,
@@ -16,4 +36,12 @@ html {
 body {
   /* Set back the default font size to 16px */
   font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
