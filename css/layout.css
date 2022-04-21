@@ -6,7 +6,8 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* 718px - 44px (phone status bar) = 674px */
+  height: 67.4rem;
 }
 
 /* Headline */
