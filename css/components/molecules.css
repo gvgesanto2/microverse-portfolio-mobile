@@ -25,3 +25,15 @@
 .horizontal-list > *:not(:last-child) {
   margin-right: 2rem;
 }
+
+/* ////////////////////////////// */
+/* SOCIAL */
+/* ///////////////////////////// */
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social > *:first-child {
+  margin-bottom: 1.2rem;
+}
