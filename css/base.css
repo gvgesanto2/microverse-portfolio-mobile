@@ -42,6 +42,7 @@ html {
 body {
   /* Set back the default font size to 16px */
   font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
