@@ -11,3 +11,26 @@
   width: 2.4rem;
   height: 2.4rem;
 }
+
+/* ////////////////////////////// */
+/* TITLE */
+/* ///////////////////////////// */
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  color: var(--title-primary);
+}
+
+/* ////////////////////////////// */
+/* TEXT */
+/* ///////////////////////////// */
+
+.text {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--text-primary);
+}

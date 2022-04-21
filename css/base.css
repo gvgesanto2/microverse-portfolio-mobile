@@ -16,6 +16,9 @@
   /* Backgroud */
   --page-bg: var(--white);
 
+  /* Title */
+  --title-primary: var(--color-neutral-800);
+
   /* Text */
   --text-primary: var(--color-neutral-600);
   --text-primary-dark: var(--color-neutral-800);
@@ -43,6 +46,7 @@ body {
   /* Set back the default font size to 16px */
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
+  font-style: normal;
   color: var(--text-primary);
   background-color: var(--page-bg);
 }
