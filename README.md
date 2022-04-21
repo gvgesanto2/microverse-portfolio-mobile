@@ -7,7 +7,9 @@
 
 ## Built With
 
-- HTML & CSS
+- HTML5 & CSS3
+- Atomic Design methodology 
+- BEM methodology
 
 ## Getting Started
 
