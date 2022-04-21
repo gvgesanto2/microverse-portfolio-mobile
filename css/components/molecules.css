@@ -1,11 +1,9 @@
-/* ////////////////////////////// */
+
 /* ICON BUTTON */
-/* ///////////////////////////// */
 
 .icon-btn {
   border: none;
   border-radius: 0;
-
   transition: opacity 0.2s;
 }
 
@@ -13,9 +11,7 @@
   opacity: 0.9;
 }
 
-/* ////////////////////////////// */
 /* HORIZONTAL LIST */
-/* ///////////////////////////// */
 
 .horizontal-list {
   display: flex;
@@ -26,9 +22,7 @@
   margin-right: 2rem;
 }
 
-/* ////////////////////////////// */
 /* SOCIAL */
-/* ///////////////////////////// */
 
 .social {
   display: flex;

@@ -1,11 +1,11 @@
-/* ////////////////////////////// */
+
 /* OVERALL LAYOUT */
-/* ///////////////////////////// */
 
 /* Main container */
 .container {
   display: flex;
   flex-direction: column;
+
   /* 718px - 44px (phone status bar) = 674px */
   height: 67.4rem;
 }
@@ -13,12 +13,10 @@
 /* Headline */
 .headline {
   flex: 1;
-  background: url('../img/shapes.png') no-repeat 0px 0;
-
+  background: url('../img/shapes.png') no-repeat 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-
   padding: 0 2.4rem;
 }

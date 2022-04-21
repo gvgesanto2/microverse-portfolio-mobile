@@ -1,6 +1,5 @@
-/* ////////////////////////////// */
-/* Margin Bottom */
-/* ///////////////////////////// */
+
+/* MARGIN BOTTOM */
 
 .mb--sm {
   margin-bottom: 0.8rem;
@@ -22,9 +21,7 @@
   margin-bottom: 4.8rem;
 }
 
-/* ////////////////////////////// */
-/* Margin Top */
-/* ///////////////////////////// */
+/* MARGIN TOP */
 
 .mt--sm {
   margin-top: 0.8rem;
@@ -46,9 +43,7 @@
   margin-top: 4.8rem;
 }
 
-/* ////////////////////////////// */
-/* Margin Left */
-/* ///////////////////////////// */
+/* MARGIN LEFT */
 
 .ml--sm {
   margin-left: 0.8rem;
@@ -70,9 +65,7 @@
   margin-left: 4.8rem;
 }
 
-/* ////////////////////////////// */
-/* Margin Right */
-/* ///////////////////////////// */
+/* MARGIN RIGHT */
 
 .mr--sm {
   margin-right: 0.8rem;
