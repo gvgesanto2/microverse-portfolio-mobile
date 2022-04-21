@@ -1,9 +1,15 @@
+/* ////////////////////////////// */
+/* OVERALL LAYOUT */
+/* ///////////////////////////// */
+
+/* Main container */
 .container {
   display: flex;
   flex-direction: column;
   padding: 0 2.4rem;
 }
 
+/* Headline */
 .headline {
   background-color: blue;
   height: 100vh;

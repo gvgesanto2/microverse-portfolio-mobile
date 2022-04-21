@@ -14,7 +14,7 @@
   --color-primary: var(--color-primary-400);
 
   /* Backgroud */
-  --bg-light: var(--white);
+  --page-bg: var(--white);
 
   /* Text */
   --text-primary: var(--color-neutral-600);
@@ -43,6 +43,8 @@ body {
   /* Set back the default font size to 16px */
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
+  color: var(--text-primary);
+  background-color: var(--page-bg);
 }
 
 a {
@@ -51,4 +53,18 @@ a {
 
 ul {
   list-style: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+svg {
+  color: inherit;
+  fill: currentColor;
 }

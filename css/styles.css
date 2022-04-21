@@ -4,3 +4,5 @@
 @import 'components/atoms.css';
 @import 'components/molecules.css';
 @import 'components/organisms.css';
+
+@import 'utilities.css';
