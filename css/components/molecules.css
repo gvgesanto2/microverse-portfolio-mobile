@@ -12,3 +12,16 @@
 .icon-btn:hover {
   opacity: 0.9;
 }
+
+/* ////////////////////////////// */
+/* HORIZONTAL LIST */
+/* ///////////////////////////// */
+
+.horizontal-list {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-list > *:not(:last-child) {
+  margin-right: 2rem;
+}

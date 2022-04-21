@@ -34,3 +34,18 @@
   line-height: 2.4rem;
   color: var(--text-primary);
 }
+
+/* ////////////////////////////// */
+/* HEADING */
+/* ///////////////////////////// */
+
+.heading--md {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+}
+
+.heading--primary {
+  color: var(--color-primary-300);
+}
