@@ -1,0 +1,18 @@
+
+/* HEADER */
+
+.header {
+  flex: 0 0 var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--page-bg);
+  padding: 0 3.6rem 0 2.4rem;
+}
+
+.header__logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--color-primary);
+}

@@ -1,0 +1,73 @@
+
+:root {
+  /* Color Palette */
+
+  --color-primary-50: #ebebff;
+  --color-primary-100: #cbcdff;
+  --color-primary-300: #7f8cff;
+  --color-primary-400: #6070ff;
+  --color-neutral-400: #505f79;
+  --color-neutral-600: #344563;
+  --color-neutral-800: #172b4d;
+  --white: #fff;
+  --color-primary: var(--color-primary-400);
+
+  /* Backgroud */
+  --page-bg: var(--white);
+
+  /* Title */
+  --title-primary: var(--color-neutral-800);
+
+  /* Text */
+  --text-primary: var(--color-neutral-600);
+  --text-primary-dark: var(--color-neutral-800);
+
+  /* Header */
+  --header-height: 4.8rem;
+}
+
+/* Resetting */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting the value of 1rem */
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  /* Set back the default font size to 16px */
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: var(--text-primary);
+  background-color: var(--page-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+svg {
+  color: inherit;
+  fill: currentColor;
+}

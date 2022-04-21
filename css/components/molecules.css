@@ -1,0 +1,34 @@
+
+/* ICON BUTTON */
+
+.icon-btn {
+  border: none;
+  border-radius: 0;
+  transition: opacity 0.2s;
+}
+
+.icon-btn:hover {
+  opacity: 0.9;
+}
+
+/* HORIZONTAL LIST */
+
+.horizontal-list {
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-list > *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+/* SOCIAL */
+
+.social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social > *:first-child {
+  margin-bottom: 1.2rem;
+}
