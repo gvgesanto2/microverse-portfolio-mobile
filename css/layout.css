@@ -13,7 +13,8 @@
 /* Headline */
 .headline {
   flex: 1;
-  background: url('../img/shapes.png') no-repeat 0 0;
+  background: url('../img/shapes.png') no-repeat 0 0/100% auto;
+  /* background-size: 100% auto; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
