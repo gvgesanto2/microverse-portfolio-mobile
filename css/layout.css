@@ -6,11 +6,17 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0 2.4rem;
+  height: 100vh;
 }
 
 /* Headline */
 .headline {
-  background-color: blue;
-  height: 100vh;
+  flex: 1;
+  background: url('../img/shapes.png') no-repeat 0px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  padding: 0 2.4rem;
 }
