@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello Microverse
+# Gabriel Santo - Portfolio
 
-> This is a "Hello World" project from the Microverse Bootcamp. The goal here is to master all of the tools and best practices learned in previous lessons, such as following the GitHub flow, opening pull requests, and setting up GitHub Actions and linters.
+> This is the mobile version skeleton of the "Gabriel Santo - Portfolio" webpage. This project was built in the lesson "Portfolio: setup and mobile version skeleton" of the Microverse Bootcamp, following one of the Figma templates provided by Microverse.
 
 
 ## Built With
