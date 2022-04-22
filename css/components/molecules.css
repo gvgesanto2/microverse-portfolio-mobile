@@ -1,4 +1,3 @@
-
 /* ICON BUTTON */
 
 .icon-btn {
@@ -22,6 +21,21 @@
   margin-right: 2rem;
 }
 
+.horizontal-list--sm > *:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+/* VERTICAL LIST */
+
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-list > *:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
 /* SOCIAL */
 
 .social {
@@ -31,4 +45,54 @@
 
 .social > *:first-child {
   margin-bottom: 1.2rem;
+}
+
+/* LIST SEPARATED BY BULLET POINTS */
+
+.bull-list {
+  display: flex;
+  align-items: center;
+}
+
+.bull-list > li {
+  display: flex;
+  align-items: center;
+}
+
+.bull-list > li:not(:last-child) {
+  position: relative;
+  margin-right: 3.2rem;
+}
+
+.bull-list > li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 0.4rem);
+  left: 100%;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  background-color: var(--color-neutral-50);
+  margin-left: 1.2rem;
+}
+
+/* SIMPLE CARD */
+
+.simple-card {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-10);
+  border-radius: 0.8rem;
+  padding: 0.9rem 1.2rem;
+}
+
+.simple-card > *:first-child {
+  margin-right: 1.6rem;
+}
+
+.simple-card__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--color-neutral-700);
 }

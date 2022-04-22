@@ -1,4 +1,3 @@
-
 /* ICON */
 
 .icon--sm {
@@ -20,6 +19,12 @@
   color: var(--title-primary);
 }
 
+.title--sm {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+}
+
 /* TEXT */
 
 .text {
@@ -30,15 +35,90 @@
   color: var(--text-primary);
 }
 
+.text--sm {
+  font-size: 1.5rem;
+}
+
 /* HEADING */
+
+.heading {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
 
 .heading--md {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  text-transform: uppercase;
 }
 
 .heading--primary {
   color: var(--color-primary-300);
+}
+
+/* LABEL */
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  letter-spacing: 0.03em;
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: 8px;
+  padding: 0.4rem 1.2rem;
+}
+
+/* STANDARD BUTTON */
+
+.btn {
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.03em;
+  color: var(--color-primary-dark);
+  border: 1px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 1.2rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  box-shadow: 0 0.8rem 1.6rem rgba(64, 83, 252, 0.24);
+  color: var(--white);
+}
+
+.btn--active,
+.btn:active {
+  background-color: var(--blue-dark-1);
+  color: var(--white);
+}
+
+.btn--disabled,
+.btn:disabled {
+  border-color: 1px solid var(--color-neutral-50);
+  color: var(--grey-dark-1);
+}
+
+/* META INFORMATION */
+
+.meta-info {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: var(--color-neutral-100);
+}
+
+/* ROUND IMAGE */
+
+.round-img--md {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
 }
