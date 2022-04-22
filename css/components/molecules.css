@@ -21,6 +21,10 @@
   margin-right: 2rem;
 }
 
+.horizontal-list--sm > *:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
 /* SOCIAL */
 
 .social {
@@ -30,4 +34,33 @@
 
 .social > *:first-child {
   margin-bottom: 1.2rem;
+}
+
+/* LIST SEPARATED BY BULLET POINTS */
+
+.bull-list {
+  display: flex;
+  align-items: center;
+}
+
+.bull-list > li {
+  display: flex;
+  align-items: center;
+}
+
+.bull-list > li:not(:last-child) {
+  position: relative;
+  margin-right: 3.2rem;
+}
+
+.bull-list > li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 0.4rem);
+  left: 100%;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  background-color: var(--color-neutral-50);
+  margin-left: 1.2rem;
 }
