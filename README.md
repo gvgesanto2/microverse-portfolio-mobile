@@ -1,33 +1,59 @@
-## Description
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-Task: https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md
+# Gabriel Santo - Portfolio
 
-This PR makes the following changes:
--  Sets up the GitHub Actions and the [Webhint](https://webhint.io/) and [Stylelint](https://stylelint.io/) linters
--  Creates the Header for the Homepage mobile version skeleton
--  Creates the Headline section for the Homepage mobile version skeleton
+> This is the mobile version skeleton of the "Gabriel Santo - Portfolio" webpage. This project was built in the lesson "Portfolio: setup and mobile version skeleton" of the Microverse Bootcamp, following one of the Figma templates provided by Microverse.
 
-Plus, it adopts the following methodologies and conventions:
-- [BEM](https://en.bem.info/methodology/) methodology for naming the CSS classes
-- A simplified and modified version of the [Scalable and Modular Architecture for CSS](http://smacss.com/) (SMACSS) methodology for organizing the CSS code into categorized folders/files (base, components, layout, and utilities)
-- [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/) methodology for breaking down the CSS components into atoms, molecules, and organisms
 
-**Note: It was created some utility classes that were not used yet, but which will be used in other pages of this Portfolio mobile version skeleton.**
+## Built With
 
-## Type of change
+- HTML5 & CSS3
+- Atomic Design methodology 
+- BEM methodology
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [X] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
+## Getting Started
 
-## Checklist:
+To get a local copy up and running follow these simple example steps.
 
-- [X] My code follows the style guidelines of this project (no linters errors)
-- [X] I have checked my code and corrected any misspellings
-- [X] I have commented my code
-- [X] I have deleted any unused code as comments in my codebase
+### Prerequisites
 
-## Screenshots
+- Web Browser (e.g. Firefox, Chrome, Edge)
+- NPM (Node Package Manager)
 
-some image...
+### Setup
+
+Download the code from this repository.
+
+### Install
+
+Install the project dependencies using this command on the root project directory:
+
+```console
+$ npm install
+```
+
+### Usage
+
+Open the index.html file in your Web Browser.
+
+## Authors
+
+👤 **Gabriel Santo**
+
+- GitHub: [@gvgesanto2](https://github.com/gvgesanto2)
+- Twitter: [@GabrielSanto997](https://twitter.com/GabrielSanto997)
+- LinkedIn: [Gabriel Santo](https://linkedin.com/in/gabriel-santo-5882a71b2/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
