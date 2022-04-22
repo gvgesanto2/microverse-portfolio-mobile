@@ -34,3 +34,12 @@
   background-color: var(--grey-light-1);
   padding: 11.4rem 2.4rem;
 }
+
+/* ABOUT ME SECTION */
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+
+  padding: 11.4rem 2.4rem;
+}
