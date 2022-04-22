@@ -48,3 +48,49 @@
 .card__action {
   padding: 1.2rem 0;
 }
+
+/* DROPDOWN */
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7.2rem;
+  border-bottom: 1px solid var(--color-neutral-40);
+  padding: 0 1.2rem;
+}
+
+.dropdown__title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: #000;
+}
+
+.dropdown__btn {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.4rem;
+}
+
+.dropdown__detail {
+  display: none;
+  padding: 1.2rem;
+}
+
+.dropdown--active .dropdown__summary {
+  border-bottom: none;
+}
+
+.dropdown--active .dropdown__detail {
+  display: block;
+}
+
+.dropdown--active .dropdown__btn svg {
+  transform: rotate(90deg);
+}

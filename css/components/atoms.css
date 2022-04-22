@@ -114,3 +114,11 @@
   line-height: 1.6rem;
   color: var(--color-neutral-100);
 }
+
+/* ROUND IMAGE */
+
+.round-img--md {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+}
