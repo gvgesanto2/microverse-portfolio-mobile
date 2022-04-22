@@ -10,18 +10,18 @@
   opacity: 0.9;
 }
 
-/* SIMPLE LIST */
+/* HORIZONTAL LIST */
 
-.simple-list {
+.horizontal-list {
   display: flex;
   align-items: center;
 }
 
-.simple-list > *:not(:last-child) {
+.horizontal-list > *:not(:last-child) {
   margin-right: 2rem;
 }
 
-.simple-list--sm > *:not(:last-child) {
+.horizontal-list--sm > *:not(:last-child) {
   margin-right: 0.8rem;
 }
 
