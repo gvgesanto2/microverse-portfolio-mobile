@@ -65,7 +65,7 @@ html {
 body {
   /* Set back the default font size to 16px */
   font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   color: var(--text-primary);
   background-color: var(--page-bg);
@@ -97,4 +97,3 @@ svg {
 textarea {
   resize: none;
 }
-
