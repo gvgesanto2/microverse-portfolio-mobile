@@ -41,6 +41,9 @@
   /* Input */
   --color-input-border: #cfd8dc;
   --color-input-placeholder: #b3bac5;
+
+  /* Contact Section */
+  --contact-section-offset: 13.8rem;
 }
 
 /* Resetting */
