@@ -65,7 +65,7 @@
 }
 
 .bull-list > li:not(:last-child)::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 0.4rem);
   left: 100%;
@@ -95,4 +95,21 @@
   font-weight: 500;
   line-height: 2rem;
   color: var(--color-neutral-700);
+}
+/* FORM */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 44.7rem;
+}
+
+.form__input-group > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__btn-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2.2rem;
 }
