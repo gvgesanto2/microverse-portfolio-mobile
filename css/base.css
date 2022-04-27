@@ -27,7 +27,7 @@
   --color-primary-dark: var(--color-primary-500);
 
   /* Backgroud */
-  --page-bg: var(--white);
+  --page-bg: var(--grey-light-1);
 
   /* Title */
   --title-primary: var(--color-neutral-800);
@@ -38,6 +38,13 @@
 
   /* Header */
   --header-height: 4.8rem;
+
+  /* Input */
+  --color-input-border: #cfd8dc;
+  --color-input-placeholder: #b3bac5;
+
+  /* Contact Section */
+  --contact-section-offset: 13.8rem;
 }
 
 /* Resetting */
@@ -85,4 +92,8 @@ button {
 svg {
   color: inherit;
   fill: currentColor;
+}
+
+textarea {
+  resize: none;
 }

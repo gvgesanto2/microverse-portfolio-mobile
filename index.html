@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="header mb--md">
+      <header class="header">
         <a href="#">
           <span class="header__logo">GS</span>
         </a>
@@ -357,6 +357,60 @@
           </ul>
         </div>
       </section>
+      <footer class="contact">
+        <div class="contact__header">
+          <h2 class="title title--light mb--md">Contact me</h2>
+          <p class="text text--lg text--light text--center">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+        </div>
+        <div class="contact__content">
+          <form action="https://formspree.io/f/xrgjokjo" method="post" class="form">
+            <ul class="form__input-group">
+              <li>
+                <input
+                  id="name"
+                  name="user_name"
+                  type="text"
+                  placeholder="Name"
+                  class="data-input"
+                  maxlength="30"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  id="email"
+                  name="user_email"
+                  type="email"
+                  placeholder="Email"
+                  class="data-input"
+                  required
+                />
+              </li>
+              <li>
+                <textarea
+                  class="data-input data-input--textarea"
+                  name="user_message"
+                  id="msg"
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your message here"
+                  maxlength="500"
+                  required
+                ></textarea>
+              </li>
+            </ul>
+            <div class="form__btn-group">
+              <button class="btn btn--light btn--md" type="submit">
+                Get In Touch
+              </button>
+            </div>
+          </form>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
