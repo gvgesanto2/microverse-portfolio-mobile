@@ -27,7 +27,7 @@
   --color-primary-dark: var(--color-primary-500);
 
   /* Backgroud */
-  --page-bg: var(--white);
+  --page-bg: var(--grey-light-1);
 
   /* Title */
   --title-primary: var(--color-neutral-800);
