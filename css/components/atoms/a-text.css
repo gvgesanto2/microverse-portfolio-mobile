@@ -1,0 +1,26 @@
+/* TEXT */
+
+.a-text {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--text-primary);
+}
+
+.a-text--sm {
+  font-size: 1.5rem;
+}
+
+.a-text--lg {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+.a-text--light {
+  color: var(--white);
+}
+
+.a-text--center {
+  text-align: center;
+}

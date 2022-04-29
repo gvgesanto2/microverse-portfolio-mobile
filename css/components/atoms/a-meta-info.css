@@ -1,0 +1,9 @@
+/* META INFORMATION */
+
+.a-meta-info {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: var(--color-neutral-100);
+}

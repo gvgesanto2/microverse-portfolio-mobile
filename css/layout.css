@@ -2,30 +2,39 @@
 
 /* MAIN CONTAINER */
 
-.container {
+.l-container {
   display: flex;
   flex-direction: column;
 }
 
 /* HEADLINE SECTION */
 
-.headline {
-  flex: 0 0 calc(100vh - var(--header-height));
+.l-headline {
+  flex: 0 0 calc(100vh - var(--header-height-mobile));
+  /* flex: 0 0 100vh; */
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  max-height: 80rem;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: flex-start;
   min-height: 55rem;
-  background: url('../img/shapes.png') no-repeat 0 3.5rem/100% auto;
+  /* min-height: 71.8rem; */
+  /* max-height: 80rem; */
+  background: url('../img/mobile/headline-bg.svg') no-repeat 0 5.57vh/100% auto;
+  background: url('../img/mobile/headline-bg.svg') no-repeat 0 10vh/100% auto;
+  /* background: url('../img/shapes.png') no-repeat right 0 top 1.2rem; */
   background-color: var(--white);
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 10rem;
   padding: 0 2.4rem;
+}
+
+.l-headline__content {
+  max-width: 52.1vw;
+  max-width: 75rem;
 }
 
 /* WORKS SECTION */
 
-.works {
+.l-works {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 8.8rem;
@@ -35,30 +44,45 @@
 
 /* ABOUT ME SECTION */
 
-.about-me {
+.l-about-me {
   display: flex;
   flex-direction: column;
   background-color: var(--white);
-  border-top-right-radius: 100px;
+  border-top-right-radius: 10rem;
   padding: 11.4rem 2.4rem calc(11.4rem + var(--contact-section-offset));
 }
 
+.l-profile__social {
+  margin-bottom: 1.2rem;
+}
+
+.l-profile__social > *:first-child {
+  margin-bottom: 1.6rem;
+}
+
+/* 100em = 1200px */
+/* @media only screen and (min-width: 100em) {
+  .my-skills {
+    margin-left: 7rem;
+  }
+} */
+
 /* CONTACT SECTION */
 
-.contact {
+.l-contact {
   display: flex;
   width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('../img/contact-bg.png') no-repeat right 0 top 2.1rem;
+  background: url('../img/mobile/contact-bg.svg') no-repeat right 0 top 2.1rem;
   background-color: var(--color-primary);
-  border-top-left-radius: 100px;
+  border-top-left-radius: 10rem;
   margin-top: calc(-1 * var(--contact-section-offset));
   padding: 10.3rem 2.4rem 4.5rem 2.4rem;
 }
 
-.contact__header {
+.l-contact__header {
   display: flex;
   flex-direction: column;
   align-items: center;

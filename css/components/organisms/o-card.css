@@ -1,0 +1,39 @@
+/* CARD */
+
+.o-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px solid var(--color-neutral-40);
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+}
+
+.o-card__img {
+  width: 100%;
+  border-radius: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+
+.o-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.o-card__content > *:not(.o-card__header, :last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.o-card__header {
+  margin-bottom: 2rem;
+}
+
+.o-card__header > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.o-card__action {
+  padding: 1.2rem 0;
+}

@@ -1,0 +1,10 @@
+/* USER NAVIGATION */
+
+.m-user-nav {
+  display: flex;
+  align-items: center;
+}
+
+.m-user-nav__links {
+  display: none;
+}

@@ -1,0 +1,14 @@
+/* LABEL */
+
+.a-label {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  letter-spacing: 0.03em;
+  color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  border-radius: 0.8rem;
+  padding: 0.4rem 1.2rem;
+}

@@ -1,0 +1,9 @@
+/* OVERFLOW LIST */
+
+.m-overflow-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 0));
+  grid-column-gap: 0.8rem;
+  overflow: hidden;
+}
