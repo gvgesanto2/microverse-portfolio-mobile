@@ -13,6 +13,20 @@ html {
   font-size: 62.5%;
 }
 
+/* 20em = 320px */
+@media only screen and (max-width: 20em) {
+  html {
+    font-size: 52.25%;
+  }
+}
+
+/* 15.625em = 250px */
+@media only screen and (max-width: 15.625em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   /* Set back the default font size to 16px */
   font-size: 1.6rem;

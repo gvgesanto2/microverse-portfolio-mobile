@@ -18,3 +18,21 @@
   line-height: 2rem;
   color: var(--color-neutral-700);
 }
+
+/* 50em = 800px */
+@media only screen and (min-width: 50em) {
+  .m-simple-card {
+    flex-direction: column;
+    align-items: flex-start;
+    width: var(--simple-card-constrained-width);
+    padding: 1.2rem 1.2rem 2rem 1.2rem;
+  }
+
+  .m-simple-card > *:first-child {
+    margin: 0 0 1.6rem;
+  }
+
+  .m-simple-card__title {
+    line-height: 2.4rem;
+  }
+}

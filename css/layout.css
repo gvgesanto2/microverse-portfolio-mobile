@@ -11,17 +11,11 @@
 
 .l-headline {
   flex: 0 0 calc(100vh - var(--header-height-mobile));
-  /* flex: 0 0 100vh; */
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: flex-start;
   min-height: 55rem;
-  /* min-height: 71.8rem; */
-  /* max-height: 80rem; */
-  background: url('../img/mobile/headline-bg.svg') no-repeat 0 5.57vh/100% auto;
   background: url('../img/mobile/headline-bg.svg') no-repeat 0 10vh/100% auto;
-  /* background: url('../img/shapes.png') no-repeat right 0 top 1.2rem; */
   background-color: var(--white);
   border-bottom-left-radius: 10rem;
   padding: 0 2.4rem;
@@ -60,13 +54,6 @@
   margin-bottom: 1.6rem;
 }
 
-/* 100em = 1200px */
-/* @media only screen and (min-width: 100em) {
-  .my-skills {
-    margin-left: 7rem;
-  }
-} */
-
 /* CONTACT SECTION */
 
 .l-contact {
@@ -88,4 +75,93 @@
   align-items: center;
   max-width: 56.9rem;
   margin-bottom: 4.8rem;
+}
+
+/* 31.25em = 500px */
+@media only screen and (min-width: 31.25em) {
+  .l-headline {
+    padding: 0 18vw;
+  }
+
+  .l-works,
+  .l-about-me,
+  .l-contact {
+    padding-left: 9.86vw;
+    padding-right: 9.86vw;
+  }
+}
+
+/* 50em = 800px */
+@media only screen and (min-width: 50em) {
+  .l-headline {
+    background: url('../img/desktop/headline-bg-pc.svg') no-repeat top 5.57vh
+      right 0;
+    background-color: var(--white);
+    margin-top: var(--header-height-desktop);
+  }
+
+  .l-works {
+    grid-row-gap: 9.86vw;
+    padding: 9.86vw;
+  }
+
+  .l-about-me {
+    padding: 9.86vw 9.86vw calc(11.4rem + var(--contact-section-offset));
+  }
+
+  .l-contact {
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100%
+      auto;
+    background-color: var(--color-primary);
+    padding: 9.86vw 0 8.82vw 0;
+  }
+}
+
+/* 62.5em = 1000px */
+@media only screen and (min-width: 62.5em) {
+  .l-about-me {
+    flex-direction: row;
+  }
+
+  .l-profile__social {
+    margin-bottom: 2.4rem;
+  }
+
+  .l-my-skills {
+    flex: 0 0 59.25%;
+    margin-left: 2.5rem;
+  }
+}
+
+/* 75em = 1200px */
+@media only screen and (min-width: 75em) {
+  .l-about-me {
+    padding-bottom: calc(9.31vw + var(--contact-section-offset));
+  }
+}
+
+/* 81.25em = 1300px */
+@media only screen and (min-width: 81.25em) {
+  .l-contact {
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat center center;
+    background-color: var(--color-primary);
+  }
+}
+
+/* 93.75em = 1500px */
+@media only screen and (min-width: 93.75em) {
+  .l-headline {
+    background: url('../img/desktop/headline-bg-pc.svg') no-repeat 0 5.57vh/100%
+      auto;
+    background-color: var(--white);
+  }
+}
+
+/* 100em = 1600px */
+@media only screen and (min-width: 100em) {
+  .l-contact {
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100%
+      auto;
+    background-color: var(--color-primary);
+  }
 }

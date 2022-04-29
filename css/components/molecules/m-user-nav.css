@@ -8,3 +8,31 @@
 .m-user-nav__links {
   display: none;
 }
+
+/* 50em = 800px */
+@media only screen and (min-width: 50em) {
+  .m-user-nav__btn {
+    display: none;
+  }
+
+  .m-user-nav__links {
+    display: flex;
+    align-items: center;
+  }
+
+  .m-user-nav__links a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--text-primary);
+    transition: all 0.2s;
+  }
+
+  .m-user-nav__links a:hover {
+    opacity: 0.9;
+  }
+
+  .m-user-nav__links > *:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}

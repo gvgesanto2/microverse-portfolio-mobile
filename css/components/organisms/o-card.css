@@ -37,3 +37,47 @@
 .o-card__action {
   padding: 1.2rem 0;
 }
+
+/* 18.75em = 300px */
+@media only screen and (max-width: 18.75em) {
+  .o-card__text {
+    display: none;
+  }
+}
+
+/* 50em = 800px */
+@media only screen and (min-width: 50em) {
+  .o-card {
+    flex-direction: row;
+    padding: 2.4rem 4.6rem 2.4rem 2.4rem;
+  }
+  .o-card__img {
+    align-self: center;
+    flex: 0 0 50%;
+    margin: 0 3rem 0 0;
+  }
+
+  .o-card--reverse {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 2.4rem 2.2rem 2.4rem 4.8rem;
+  }
+  .o-card--reverse .o-card__img {
+    margin: 0 0 0 3rem;
+  }
+}
+
+/* 75em = 1200px */
+@media only screen and (min-width: 75em) {
+  .o-card__content > *:not(.o-card__header, :last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  .o-card__header {
+    margin-bottom: 3.2rem;
+  }
+
+  .o-card__action {
+    padding: 1.6rem 0;
+  }
+}
