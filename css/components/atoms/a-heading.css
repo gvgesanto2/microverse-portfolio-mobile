@@ -1,0 +1,29 @@
+/* HEADING */
+
+.a-heading {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.a-heading--md {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.a-heading--primary {
+  color: var(--color-primary-300);
+}
+
+/* 68.75em = 1100px */
+@media only screen and (min-width: 68.75em) {
+  .a-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  }
+}
