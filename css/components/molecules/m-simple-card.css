@@ -23,6 +23,7 @@
 .m-simple-card:hover {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
+
 /* 50em = 800px */
 @media only screen and (min-width: 50em) {
   .m-simple-card {
