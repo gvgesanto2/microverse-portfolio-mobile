@@ -94,8 +94,7 @@
 /* 50em = 800px */
 @media only screen and (min-width: 50em) {
   .l-headline {
-    background: url('../img/desktop/headline-bg-pc.svg') no-repeat top 5.57vh
-      right 0;
+    background: url('../img/desktop/headline-bg-pc.svg') no-repeat top 5.57vh right 0;
     background-color: var(--white);
     margin-top: var(--header-height-desktop);
   }
@@ -110,8 +109,7 @@
   }
 
   .l-contact {
-    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100%
-      auto;
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100% auto;
     background-color: var(--color-primary);
     padding: 9.86vw 0 8.82vw 0;
   }
@@ -151,8 +149,7 @@
 /* 93.75em = 1500px */
 @media only screen and (min-width: 93.75em) {
   .l-headline {
-    background: url('../img/desktop/headline-bg-pc.svg') no-repeat 0 5.57vh/100%
-      auto;
+    background: url('../img/desktop/headline-bg-pc.svg') no-repeat 0 5.57vh/100% auto;
     background-color: var(--white);
   }
 }
@@ -160,8 +157,7 @@
 /* 100em = 1600px */
 @media only screen and (min-width: 100em) {
   .l-contact {
-    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100%
-      auto;
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100% auto;
     background-color: var(--color-primary);
   }
 }

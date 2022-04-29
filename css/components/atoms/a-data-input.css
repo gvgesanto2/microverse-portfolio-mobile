@@ -12,10 +12,6 @@
   padding: 1.5rem 3.8rem 1.5rem 1.6rem;
 }
 
-.a-data-input:focus {
-  outline: none;
-}
-
 .a-data-input::-webkit-input-placeholder,
 .a-data-input::placeholder {
   font-family: inherit;
@@ -23,6 +19,10 @@
   font-weight: 400;
   line-height: 2.4rem;
   color: var(--color-input-placeholder);
+}
+
+.a-data-input:focus {
+  outline: none;
 }
 
 .a-data-input--textarea {

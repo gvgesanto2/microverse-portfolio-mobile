@@ -9,9 +9,6 @@
 /* 50em = 800px */
 @media only screen and (min-width: 50em) {
   .o-simple-card-grid {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(var(--simple-card-constrained-width), min-content)
-    );
+    grid-template-columns: repeat(auto-fit, minmax(var(--simple-card-constrained-width), min-content));
   }
 }
