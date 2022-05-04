@@ -22,7 +22,7 @@
 }
 
 .a-data-input:focus {
-  outline: none;
+  outline-color: var(--color-primary-300);
 }
 
 .a-data-input--textarea {
