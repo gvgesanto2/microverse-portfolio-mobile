@@ -1,6 +1,6 @@
 ## Description
 
-Task: https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md
+**Task:** https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md
 
 This PR makes the following changes:
 -  Sets up the GitHub Actions and the [Webhint](https://webhint.io/) and [Stylelint](https://stylelint.io/) linters

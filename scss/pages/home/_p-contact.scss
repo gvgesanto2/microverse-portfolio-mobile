@@ -1,0 +1,49 @@
+/* CONTACT SECTION */
+
+.p-contact {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/mobile/contact-bg.svg') no-repeat right 0 top 2.1rem;
+  background-color: var(--color-primary);
+  border-top-left-radius: 10rem;
+  margin-top: calc(-1 * var(--contact-section-offset));
+  padding: 10.3rem 2.4rem 4.5rem 2.4rem;
+
+  // screen-sm = 31.25em = 500px
+  @include respond-to('min', 'screen-sm') {
+    padding-left: 9.86vw;
+    padding-right: 9.86vw;
+  }
+
+  // screen-md = 50em = 800px
+  @include respond-to('min', 'screen-md') {
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100%
+      auto;
+    background-color: var(--color-primary);
+    padding: 9.86vw 0 8.82vw 0;
+  }
+
+  // screen-hg = 81.25em = 1300px
+  @include respond-to('min', 'screen-hg') {
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat center center;
+    background-color: var(--color-primary);
+  }
+
+  // screen-xxhg = 100em = 1600px
+  @include respond-to('min', 'screen-xxhg') {
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100%
+      auto;
+    background-color: var(--color-primary);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 56.9rem;
+    margin-bottom: 4.8rem;
+  }
+}

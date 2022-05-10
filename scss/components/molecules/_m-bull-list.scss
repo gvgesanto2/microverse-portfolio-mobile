@@ -1,0 +1,28 @@
+/* LIST SEPARATED BY BULLET POINTS */
+
+.m-bull-list {
+  display: flex;
+  align-items: center;
+
+  & > li {
+    display: flex;
+    align-items: center;
+  }
+
+  & > li:not(:last-child) {
+    position: relative;
+    margin-right: 3.2rem;
+  }
+
+  & > li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 0.4rem);
+    left: 100%;
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    background-color: var(--color-neutral-50);
+    margin-left: 1.2rem;
+  }
+}

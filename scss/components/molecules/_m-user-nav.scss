@@ -1,0 +1,39 @@
+/* USER NAVIGATION */
+
+.m-user-nav {
+  display: flex;
+  align-items: center;
+
+  &__links {
+    display: none;
+
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      display: flex;
+      align-items: center;
+    }
+
+    & a {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 2rem;
+      color: var(--text-primary);
+      transition: all 0.2s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 3.2rem;
+    }
+  }
+
+  &__btn {
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      display: none;
+    }
+  }
+}

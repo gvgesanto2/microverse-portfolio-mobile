@@ -1,0 +1,50 @@
+html {
+  // Setting the value of 1rem to 10px
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  // screen-xsm = 20em = 320px
+  @include respond-to('max', 'screen-xsm') {
+    font-size: 52.25%;
+  }
+
+  // screen-xxsm = 15.625em = 250px
+  @include respond-to('max', 'screen-xxsm') {
+    font-size: 50%;
+  }
+}
+
+body {
+  // Set back the default font size to 16px
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: var(--text-primary);
+  background-color: var(--page-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+svg {
+  color: inherit;
+  fill: currentColor;
+}
+
+textarea {
+  resize: none;
+}

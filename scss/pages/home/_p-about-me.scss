@@ -1,0 +1,53 @@
+/* ABOUT ME SECTION */
+
+.p-about-me {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-top-right-radius: 10rem;
+  padding: 11.4rem 2.4rem calc(11.4rem + var(--contact-section-offset));
+
+  // screen-sm = 31.25em = 500px
+  @include respond-to('min', 'screen-sm') {
+    padding-left: 9.86vw;
+    padding-right: 9.86vw;
+  }
+
+  // screen-md = 50em = 800px
+  @include respond-to('min', 'screen-md') {
+    padding: 9.86vw 9.86vw calc(11.4rem + var(--contact-section-offset));
+  }
+
+  // screen-lg = 62.5em = 1000px
+  @include respond-to('min', 'screen-lg') {
+    flex-direction: row;
+  }
+
+  // screen-xxlg = 75em = 1200px
+  @include respond-to('min', 'screen-xxlg') {
+    padding-bottom: calc(9.31vw + var(--contact-section-offset));
+  }
+}
+
+.p-profile {
+  &__social {
+    margin-bottom: 1.2rem;
+
+    // screen-lg = 62.5em = 1000px
+    @include respond-to('min', 'screen-lg') {
+      margin-bottom: 2.4rem;
+    }
+
+    & > *:first-child {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+.p-my-skills {
+  // screen-lg = 62.5em = 1000px
+  @include respond-to('min', 'screen-lg') {
+    flex: 0 0 59.25%;
+    margin-left: 2.5rem;
+  }
+}

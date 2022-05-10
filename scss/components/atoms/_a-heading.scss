@@ -1,0 +1,27 @@
+/* HEADING */
+
+.a-heading {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  color: var(--text-primary);
+
+  // screen-xlg = 68.75em = 1100px
+  @include respond-to('min', 'screen-xlg') {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  }
+
+  &--md {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  }
+
+  &--primary {
+    color: var(--color-primary-300);
+  }
+}
