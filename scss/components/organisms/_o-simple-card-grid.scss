@@ -7,9 +7,10 @@
 
   // screen-md = 50em = 800px
   @include respond-to('min', 'screen-md') {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(var(--simple-card-constrained-width), min-content)
-    );
+    grid-template-columns:
+      repeat(
+        auto-fit,
+        minmax(var(--simple-card-constrained-width), min-content)
+      );
   }
 }

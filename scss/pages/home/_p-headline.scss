@@ -18,16 +18,14 @@
 
   // screen-md = 50em = 800px
   @include respond-to('min', 'screen-md') {
-    background: url('../img/desktop/headline-bg-pc.svg') no-repeat top 5.57vh
-      right 0;
+    background: url('../img/desktop/headline-bg-pc.svg') no-repeat top 5.57vh right 0;
     background-color: var(--white);
     margin-top: var(--header-height-desktop);
   }
 
   // screen-xhg = 93.75em = 1500px
   @include respond-to('min', 'screen-xhg') {
-    background: url('../img/desktop/headline-bg-pc.svg') no-repeat 0 5.57vh/100%
-      auto;
+    background: url('../img/desktop/headline-bg-pc.svg') no-repeat 0 5.57vh/100% auto;
     background-color: var(--white);
   }
 

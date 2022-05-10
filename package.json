@@ -19,14 +19,18 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC", 
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/gvgesanto2/hello-microverse/issues"
   },
   "homepage": "https://github.com/gvgesanto2/hello-microverse#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "babel-eslint": "^10.1.0",
     "concat": "^1.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
     "hint": "^6.1.11",
     "live-server": "^1.2.2",
     "node-sass": "^7.0.1",

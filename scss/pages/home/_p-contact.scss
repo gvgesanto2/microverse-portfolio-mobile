@@ -20,8 +20,7 @@
 
   // screen-md = 50em = 800px
   @include respond-to('min', 'screen-md') {
-    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100%
-      auto;
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100% auto;
     background-color: var(--color-primary);
     padding: 9.86vw 0 8.82vw 0;
   }
@@ -34,8 +33,7 @@
 
   // screen-xxhg = 100em = 1600px
   @include respond-to('min', 'screen-xxhg') {
-    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100%
-      auto;
+    background: url('../img/desktop/contact-bg-pc.svg') no-repeat 0 3.5rem/100% auto;
     background-color: var(--color-primary);
   }
 

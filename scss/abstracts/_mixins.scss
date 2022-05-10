@@ -24,7 +24,9 @@
     @media only screen and ($bp-type-query: $bp-query) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @error 'No value found for `#{$bp-type}` or `#{$breakpoint}`. ' + 'Please make sure both values are defined in `$bp-types` and `$breakpoints` map respectively.';
   }
 }
