@@ -14,4 +14,18 @@ const showHamburgerMenu = () => {
   homeMainContainer.classList.add('u-is-blurred');
 };
 
+// Close Hamburguer Menu event handler 
+const closeHamburgerMenu = () => {
+  if (homeMainContainer.classList.contains('u-is-blurred')) {
+    homeMainContainer.classList.remove('u-is-blurred');
+  }
+  hamburguerMenu.classList.add('o-hamburger-menu--is-hidden');
+};
+
 hamburgerBtn.addEventListener('click', showHamburgerMenu);
+
+hamburgerCancelBtn.addEventListener('click', closeHamburgerMenu);
+
+hamburguerMenuLinks.forEach((link) => {
+  link.addEventListener('click', closeHamburgerMenu);
+});
