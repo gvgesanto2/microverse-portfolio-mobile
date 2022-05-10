@@ -511,7 +511,8 @@ textarea {
   left: 0;
   background-color: rgba(96, 112, 255, 0.85);
   padding: 1.4rem 3.2rem 0 2.8rem;
-  z-index: 100; }
+  z-index: 100;
+  transition: all 0.2s; }
   .o-hamburger-menu__nav {
     margin-top: 2.6rem; }
   .o-hamburger-menu__link {
@@ -522,7 +523,7 @@ textarea {
   .o-hamburger-menu__cancel-btn {
     margin-left: auto; }
   .o-hamburger-menu--is-hidden {
-    display: none;
+    visibility: hidden;
     top: -100%; }
 
 /* Import the Homepage classes */

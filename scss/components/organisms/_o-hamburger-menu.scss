@@ -7,6 +7,7 @@
   background-color: rgba($color-primary, 0.85);
   padding: 1.4rem 3.2rem 0 2.8rem;
   z-index: 100;
+  transition: all 0.2s;
 
   &__nav {
     margin-top: 2.6rem;
@@ -24,7 +25,8 @@
   }
 
   &--is-hidden {
-    display: none;
+    // display: none;
+    visibility: hidden;
     top: -100%;
   }
 }
