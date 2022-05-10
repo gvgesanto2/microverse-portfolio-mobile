@@ -378,6 +378,12 @@ textarea {
     .m-user-nav__btn {
       display: none; } }
 
+.m-vertical-list {
+  display: flex;
+  flex-direction: column; }
+  .m-vertical-list > *:not(:last-child) {
+    margin-bottom: 4rem; }
+
 /* Import the organism components */
 /* SIMPLE CARD GRID */
 .o-simple-card-grid {
@@ -496,6 +502,28 @@ textarea {
     display: block; }
   .o-dropdown--active .o-dropdown__btn svg {
     transform: rotate(90deg); }
+
+.o-hamburger-menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(96, 112, 255, 0.85);
+  padding: 1.4rem 3.2rem 0 2.8rem;
+  z-index: 100; }
+  .o-hamburger-menu__nav {
+    margin-top: 2.6rem; }
+  .o-hamburger-menu__link {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+    color: var(--white); }
+  .o-hamburger-menu__cancel-btn {
+    margin-left: auto; }
+  .o-hamburger-menu--is-hidden {
+    display: none;
+    top: -100%; }
 
 /* Import the Homepage classes */
 /* HEADLINE SECTION */
@@ -617,6 +645,9 @@ textarea {
   flex-direction: column; }
 
 /* Import the utility classes */
+.u-is-blurred {
+  filter: blur(6px); }
+
 .u-mb--sm {
   margin-bottom: 0.8rem; }
 

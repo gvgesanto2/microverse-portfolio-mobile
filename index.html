@@ -14,13 +14,38 @@
     <title>Gabriel Santo - Web Developer - Portfolio</title>
   </head>
   <body>
-    <div class="p-container">
+    <nav class="o-hamburger-menu o-hamburger-menu--is-hidden">
+      <button
+        id="hamburger-cancel-btn"
+        class="o-hamburger-menu__cancel-btn m-icon-btn"
+      >
+        <svg class="a-icon--md">
+          <use xlink:href="img/sprite.svg#cancel"></use>
+        </svg>
+      </button>
+      <ul class="o-hamburger-menu__nav m-vertical-list">
+        <li>
+          <a class="o-hamburger-menu__link" href="#works">Portfolio</a>
+        </li>
+        <li>
+          <a class="o-hamburger-menu__link" href="#about-me">About</a>
+        </li>
+        <li>
+          <a class="o-hamburger-menu__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="main-container" class="p-container">
       <header class="o-header">
         <a href="#">
           <span class="o-header__logo">GS</span>
         </a>
         <nav class="m-user-nav">
-          <button class="m-user-nav__btn m-icon-btn" type="button">
+          <button
+            id="hamburguer-btn"
+            class="m-user-nav__btn m-icon-btn"
+            type="button"
+          >
             <svg class="a-icon--md">
               <use xlink:href="img/sprite.svg#menu-btn"></use>
             </svg>

@@ -54,17 +54,29 @@
 }
 
 // Sass Variables
+$color-primary: #6070ff;
+
 $breakpoints: (
-  'screen-xxsm': 15.625em, // 15.625em = 250px
-  'screen-xsm': 20em, // 20em = 320px
-  'screen-sm': 31.25em, // 31.25em = 500px
-  'screen-md': 50em, // 50em = 800px
-  'screen-lg': 62.5em, // 62.5em = 1000px
-  'screen-xlg': 68.75em, // 68.75em = 1100px
-  'screen-xxlg': 75em, // 75em = 1200px
-  'screen-hg': 81.25em, // 81.25em = 1300px
-  'screen-xhg': 93.75em, // 93.75em = 1500px
-  'screen-xxhg': 100em, // 100em = 1600px
+  // 15.625em = 250px
+  'screen-xxsm': 15.625em,
+  // 20em = 320px
+  'screen-xsm': 20em,
+  // 31.25em = 500px
+  'screen-sm': 31.25em,
+  // 50em = 800px
+  'screen-md': 50em,
+  // 62.5em = 1000px
+  'screen-lg': 62.5em,
+  // 68.75em = 1100px
+  'screen-xlg': 68.75em,
+  // 75em = 1200px
+  'screen-xxlg': 75em,
+  // 81.25em = 1300px
+  'screen-hg': 81.25em,
+  // 93.75em = 1500px
+  'screen-xhg': 93.75em,
+  // 100em = 1600px
+  'screen-xxhg': 100em
 );
 
 $bp-types: (

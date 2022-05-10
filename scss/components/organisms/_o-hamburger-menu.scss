@@ -1,0 +1,30 @@
+.o-hamburger-menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-primary, 0.85);
+  padding: 1.4rem 3.2rem 0 2.8rem;
+  z-index: 100;
+
+  &__nav {
+    margin-top: 2.6rem;
+  }
+
+  &__link {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4.4rem;
+    color: var(--white);
+  }
+
+  &__cancel-btn {
+    margin-left: auto;
+  }
+
+  &--is-hidden {
+    display: none;
+    top: -100%;
+  }
+}

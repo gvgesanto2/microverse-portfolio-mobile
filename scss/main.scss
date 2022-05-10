@@ -26,12 +26,14 @@
 @import 'components/molecules/m-simple-card';
 @import 'components/molecules/m-form';
 @import 'components/molecules/m-user-nav';
+@import 'components/molecules/m-vertical-list';
 
 /* Import the organism components */
 @import 'components/organisms/o-simple-card-grid';
 @import 'components/organisms/o-header';
 @import 'components/organisms/o-card';
 @import 'components/organisms/o-dropdown';
+@import 'components/organisms/o-hamburger-menu';
 
 /* Import the Homepage classes */
 @import 'pages/home/p-headline';
@@ -41,4 +43,5 @@
 @import 'pages/home/p-container';
 
 /* Import the utility classes */
+@import 'utilities/general';
 @import 'utilities/spacing';
