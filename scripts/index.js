@@ -1,3 +1,8 @@
+import ProjectsController from './controllers/projects.controller.js';
+
+const projectsController = new ProjectsController();
+projectsController.execute();
+
 const homeMainContainer = document.getElementById('home-main-container');
 const hamburguerMenu = document.getElementById('hamburger-menu');
 const hamburgerBtn = document.getElementById('hamburguer-btn');

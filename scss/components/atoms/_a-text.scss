@@ -7,14 +7,13 @@
   line-height: 2.4rem;
   color: var(--text-primary);
 
-  // screen-xlg = 68.75em = 1100px
-  @include respond-to('min', 'screen-xlg') {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-
   &--sm {
     font-size: 1.5rem;
+
+    // screen-xlg = 68.75em = 1100px
+    @include respond-to('min', 'screen-xlg') {
+      font-size: 1.6rem;
+    }
   }
 
   &--lg {

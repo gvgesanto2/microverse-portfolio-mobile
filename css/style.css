@@ -126,12 +126,11 @@ textarea {
   font-weight: 400;
   line-height: 2.4rem;
   color: var(--text-primary); }
-  @media only screen and (min-width: 68.75em) {
-    .a-text {
-      font-size: 1.6rem;
-      line-height: 2.4rem; } }
   .a-text--sm {
     font-size: 1.5rem; }
+    @media only screen and (min-width: 68.75em) {
+      .a-text--sm {
+        font-size: 1.6rem; } }
   .a-text--lg {
     font-size: 2rem;
     line-height: 2.8rem; }
