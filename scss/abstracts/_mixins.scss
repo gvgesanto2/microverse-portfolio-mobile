@@ -1,0 +1,32 @@
+@mixin roundElem($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+}
+
+@mixin respond-to($bp-type, $breakpoint) {
+  $bp-raw-query: map-get($breakpoints, $breakpoint);
+  $bp-type-raw-query: map-get($bp-types, $bp-type);
+
+  @if $bp-raw-query and $bp-type-raw-query {
+    $bp-query: if(
+      type-of($bp-raw-query) == 'string',
+      unquote($bp-raw-query),
+      inspect($bp-raw-query)
+    );
+
+    $bp-type-query: if(
+      type-of($bp-type-raw-query) == 'string',
+      unquote($bp-type-raw-query),
+      inspect($bp-type-raw-query)
+    );
+
+    @media only screen and ($bp-type-query: $bp-query) {
+      @content;
+    }
+  }
+
+  @else {
+    @error 'No value found for `#{$bp-type}` or `#{$breakpoint}`. ' + 'Please make sure both values are defined in `$bp-types` and `$breakpoints` map respectively.';
+  }
+}

@@ -1,0 +1,90 @@
+/* CARD */
+
+.o-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--white);
+  border: 1px solid var(--color-neutral-40);
+  border-radius: 1.6rem;
+  padding: 1.6rem;
+
+  // screen-md = 50em = 800px
+  @include respond-to('min', 'screen-md') {
+    flex-direction: row;
+    padding: 2.4rem 4.6rem 2.4rem 2.4rem;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-bottom: 1.2rem;
+
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      align-self: center;
+      flex: 0 0 50%;
+      margin: 0 3rem 0 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > *:not(.o-card__header, :last-child) {
+      margin-bottom: 1.2rem;
+
+      // screen-xxlg = 75em = 1200px
+      @include respond-to('min', 'screen-xxlg') {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+
+    // screen-xxlg = 75em = 1200px
+    @include respond-to('min', 'screen-xxlg') {
+      margin-bottom: 3.2rem;
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__text {
+    // screen-md = 20em = 320px
+    @include respond-to('max', 'screen-xsm') {
+      display: none;
+    }
+  }
+
+  &__action {
+    padding: 1.2rem 0;
+
+    // screen-xxlg = 75em = 1200px
+    @include respond-to('min', 'screen-xxlg') {
+      padding: 1.6rem 0;
+    }
+  }
+
+  &--reverse {
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 2.4rem 2.2rem 2.4rem 4.8rem;
+    }
+
+    & .o-card__img {
+      // screen-md = 50em = 800px
+      @include respond-to('min', 'screen-md') {
+        margin: 0 0 0 3rem;
+      }
+    }
+  }
+}

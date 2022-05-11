@@ -1,0 +1,14 @@
+/* HORIZONTAL LIST */
+
+.m-horizontal-list {
+  display: flex;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &--sm > *:not(:last-child) {
+    margin-right: 0.8rem;
+  }
+}

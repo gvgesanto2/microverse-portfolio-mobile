@@ -1,0 +1,17 @@
+/* META INFORMATION */
+
+.a-meta-info {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  color: var(--color-neutral-100);
+
+  // screen-xlg = 68.75em = 1100px
+  @include respond-to('min', 'screen-xlg') {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--grey-dark-2);
+  }
+}

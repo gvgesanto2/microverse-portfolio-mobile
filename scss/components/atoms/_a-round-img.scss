@@ -1,0 +1,7 @@
+/* ROUND IMAGE */
+
+.a-round-img {
+  &--md {
+    @include roundElem(4.8rem);
+  }
+}

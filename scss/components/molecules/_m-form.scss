@@ -1,0 +1,32 @@
+/* FORM */
+
+.m-form {
+  display: flex;
+  flex-direction: column;
+
+  // screen-md = 50em = 800px
+  @include respond-to('min', 'screen-md') {
+    width: 44.7rem;
+  }
+
+  &__input-group > *:not(:last-child) {
+    margin-bottom: 2rem;
+
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      margin-bottom: 2.7rem;
+    }
+  }
+
+  &__btn-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2.2rem;
+
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      justify-content: center;
+      margin-top: 2.7rem;
+    }
+  }
+}

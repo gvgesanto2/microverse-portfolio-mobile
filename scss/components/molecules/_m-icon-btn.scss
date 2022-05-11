@@ -1,0 +1,11 @@
+/* ICON BUTTON */
+
+.m-icon-btn {
+  border: none;
+  border-radius: 0;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

@@ -10,17 +10,46 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Gabriel Santo - Web Developer - Portfolio</title>
   </head>
   <body>
-    <div class="l-container">
+    <nav
+      id="hamburger-menu"
+      class="o-hamburger-menu o-hamburger-menu--is-hidden"
+    >
+      <button
+        id="hamburger-cancel-btn"
+        class="o-hamburger-menu__cancel-btn m-icon-btn"
+        type="button"
+      >
+        <svg class="a-icon--md">
+          <use xlink:href="img/sprite.svg#cancel"></use>
+        </svg>
+      </button>
+      <ul class="o-hamburger-menu__nav m-vertical-list">
+        <li>
+          <a class="o-hamburger-menu__link" href="#works">Portfolio</a>
+        </li>
+        <li>
+          <a class="o-hamburger-menu__link" href="#about-me">About</a>
+        </li>
+        <li>
+          <a class="o-hamburger-menu__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="home-main-container" class="p-container">
       <header class="o-header">
         <a href="#">
           <span class="o-header__logo">GS</span>
         </a>
         <nav class="m-user-nav">
-          <button class="m-user-nav__btn m-icon-btn" type="button">
+          <button
+            id="hamburguer-btn"
+            class="m-user-nav__btn m-icon-btn"
+            type="button"
+          >
             <svg class="a-icon--md">
               <use xlink:href="img/sprite.svg#menu-btn"></use>
             </svg>
@@ -38,8 +67,8 @@
           </ul>
         </nav>
       </header>
-      <section class="l-headline">
-        <div class="l-headline__content">
+      <section class="p-headline">
+        <div class="p-headline__content">
           <h1 class="a-title u-mb--md">I'm Gabriel <br />Glad to see you!</h1>
           <p class="a-text u-mb--md">
             I’m a software developer! I can help you build a product , feature
@@ -117,7 +146,7 @@
         </div>
       </section>
 
-      <section id="works" class="l-works">
+      <section id="works" class="p-works">
         <div class="o-card">
           <img
             src="img/project-1.svg"
@@ -269,8 +298,8 @@
           </div>
         </div>
       </section>
-      <section id="about-me" class="l-about-me">
-        <div class="l-profile u-mb--xlg">
+      <section id="about-me" class="p-about-me">
+        <div class="p-profile u-mb--xlg">
           <h2 class="a-title u-mb--md">
             About <br />
             Myself
@@ -281,7 +310,7 @@
             you like what you see and have a project you need coded, don’t
             hestiate to contact me.
           </p>
-          <div class="m-social l-profile__social">
+          <div class="m-social p-profile__social">
             <h3 class="a-heading a-heading--md a-heading--primary">
               let's connect
             </h3>
@@ -350,7 +379,7 @@
           </div>
           <button type="button" class="a-btn">Get my resume</button>
         </div>
-        <div class="l-my-skills">
+        <div class="p-my-skills">
           <ul>
             <li class="o-dropdown o-dropdown--active">
               <div class="o-dropdown__summary">
@@ -455,8 +484,8 @@
           </ul>
         </div>
       </section>
-      <footer id="contact" class="l-contact">
-        <div class="l-contact__header">
+      <footer id="contact" class="p-contact">
+        <div class="p-contact__header">
           <h2 class="a-title a-title--light u-mb--md">Contact me</h2>
           <p class="a-text a-text--lg a-text--light a-text--center">
             If you have an application you are interested in developing, a
@@ -464,7 +493,7 @@
             to help with it
           </p>
         </div>
-        <div class="l-contact__content">
+        <div class="p-contact__content">
           <form action="#" method="post" class="m-form">
             <ul class="m-form__input-group">
               <li>
@@ -508,5 +537,6 @@
         </div>
       </footer>
     </div>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

@@ -1,0 +1,8 @@
+.m-vertical-list {
+  display: flex;
+  flex-direction: column;
+
+  & > *:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}
