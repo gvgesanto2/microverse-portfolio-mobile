@@ -48,6 +48,13 @@ Open the index.html file in your Web Browser.
 - Twitter: [@GabrielSanto997](https://twitter.com/GabrielSanto997)
 - LinkedIn: [Gabriel Santo](https://linkedin.com/in/gabriel-santo-5882a71b2/)
 
+## Contributors
+
+👤 **Ulises Largaespada**
+
+- GitHub: [@ulisesedu7](https://github.com/ulisesedu7)
+- Twitter: [@LongswordMusic](https://twitter.com/LongswordMusic)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

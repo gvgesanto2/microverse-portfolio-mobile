@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Gabriel Santo - Web Developer - Portfolio</title>
   </head>
-  <body>
+  <body id="root">
     <nav
       id="hamburger-menu"
       class="o-hamburger-menu o-hamburger-menu--is-hidden"
@@ -47,7 +47,7 @@
         <nav class="m-user-nav">
           <button
             id="hamburguer-btn"
-            class="m-user-nav__btn m-icon-btn"
+            class="m-user-nav__btn m-icon-btn m-icon-btn--primary"
             type="button"
           >
             <svg class="a-icon--md">
@@ -146,158 +146,8 @@
         </div>
       </section>
 
-      <section id="works" class="p-works">
-        <div class="o-card">
-          <img
-            src="img/project-1.svg"
-            alt="Image of the Tonic Project"
-            class="o-card__img"
-          />
-          <div class="o-card__content">
-            <header class="o-card__header">
-              <h2 class="a-title a-title--sm">Tonic</h2>
-              <ul class="m-bull-list">
-                <li>
-                  <h3 class="a-heading">canopy</h3>
-                </li>
-                <li>
-                  <span class="a-meta-info">Back End Dev</span>
-                </li>
-                <li>
-                  <span class="a-meta-info">2015</span>
-                </li>
-              </ul>
-            </header>
+      <section id="works" class="p-works"></section>
 
-            <p class="o-card__text a-text a-text--sm">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
-            </p>
-            <ul class="m-overflow-list">
-              <li><span class="a-label">html</span></li>
-              <li><span class="a-label">css</span></li>
-              <li><span class="a-label">javaScript</span></li>
-            </ul>
-
-            <div class="o-card__action">
-              <button type="button" class="a-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="o-card o-card--reverse">
-          <img
-            src="img/project-2.svg"
-            alt="Image of the Multi-Post Stories Project"
-            class="o-card__img"
-          />
-          <div class="o-card__content">
-            <header class="o-card__header">
-              <h2 class="a-title a-title--sm">Multi-Post Stories</h2>
-              <ul class="m-bull-list">
-                <li>
-                  <h3 class="a-heading">facebook</h3>
-                </li>
-                <li>
-                  <span class="a-meta-info">Full Stack Dev</span>
-                </li>
-                <li>
-                  <span class="a-meta-info">2015</span>
-                </li>
-              </ul>
-            </header>
-            <p class="o-card__text a-text a-text--sm">
-              Experimental content creation feature that allows users to add to
-              an existing story over the course of a day without spamming their
-              friends.
-            </p>
-            <ul class="m-overflow-list">
-              <li><span class="a-label">html</span></li>
-              <li><span class="a-label">Ruby on Rails</span></li>
-              <li><span class="a-label">css</span></li>
-              <li><span class="a-label">javaScript</span></li>
-            </ul>
-            <div class="o-card__action">
-              <button type="button" class="a-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="o-card">
-          <img
-            src="img/project-3.svg"
-            alt="Image of the Facebook 360 Project"
-            class="o-card__img"
-          />
-          <div class="o-card__content">
-            <header class="o-card__header">
-              <h2 class="a-title a-title--sm">Facebook 360</h2>
-              <ul class="m-bull-list">
-                <li>
-                  <h3 class="a-heading">facebook</h3>
-                </li>
-                <li>
-                  <span class="a-meta-info">Full Stack Dev</span>
-                </li>
-                <li>
-                  <span class="a-meta-info">2015</span>
-                </li>
-              </ul>
-            </header>
-            <p class="o-card__text a-text a-text--sm">
-              Exploring the future of media in Facebook's first Virtual Reality
-              app; a place to discover and enjoy 360 photos and videos on Gear
-              VR.
-            </p>
-            <ul class="m-overflow-list">
-              <li><span class="a-label">html</span></li>
-              <li><span class="a-label">Ruby on Rails</span></li>
-              <li><span class="a-label">css</span></li>
-              <li><span class="a-label">javaScript</span></li>
-            </ul>
-            <div class="o-card__action">
-              <button type="button" class="a-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="o-card o-card--reverse">
-          <img
-            src="img/project-4.svg"
-            alt="Image of the Uber Navigation Project"
-            class="o-card__img"
-          />
-          <div class="o-card__content">
-            <header class="o-card__header">
-              <h2 class="a-title a-title--sm">Uber Navigation</h2>
-              <ul class="m-bull-list">
-                <li>
-                  <h3 class="a-heading">uber</h3>
-                </li>
-                <li>
-                  <span class="a-meta-info">Lead Developer</span>
-                </li>
-                <li>
-                  <span class="a-meta-info">2018</span>
-                </li>
-              </ul>
-            </header>
-            <p class="o-card__text a-text a-text--sm">
-              A smart assistant to make driving more safe, efficient, and fun by
-              unlocking your most expensive computer: your car.
-            </p>
-            <ul class="m-overflow-list">
-              <li><span class="a-label">html</span></li>
-              <li><span class="a-label">Ruby on Rails</span></li>
-              <li><span class="a-label">css</span></li>
-              <li><span class="a-label">javaScript</span></li>
-            </ul>
-            <div class="o-card__action">
-              <button type="button" class="a-btn">See Project</button>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="about-me" class="p-about-me">
         <div class="p-profile u-mb--xlg">
           <h2 class="a-title u-mb--md">
@@ -537,6 +387,6 @@
         </div>
       </footer>
     </div>
-    <script src="scripts/index.js"></script>
+    <script type="module" src="scripts/index.js"></script>
   </body>
 </html>

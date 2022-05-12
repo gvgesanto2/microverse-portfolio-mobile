@@ -1,0 +1,102 @@
+.o-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color-neutral-50, 0.85);
+  padding: 1.6rem;
+  overflow-y: scroll;
+  z-index: 200;
+
+  // screen-sm = 31.25em = 500px
+  @include respond-to('min', 'screen-sm') {
+    padding: 5.35vw 9.86vw;
+  }
+
+  &__window {
+    background-color: var(--white);
+    border: 1px solid var(--color-neutral-40);
+    border-radius: 1.6rem;
+    padding: 1.8rem 1.6rem 1.6rem;
+
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      padding: 2.4rem;
+    }
+
+    // screen-hg = 81.25em = 1300px
+    @include respond-to('min', 'screen-hg') {
+      padding-bottom: 8.2rem;
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.2rem;
+
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__cancel-btn {
+    padding: 0.8rem;
+    color: var(--grey-dark-3);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      margin-bottom: 4.16vw;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+
+    // screen-md = 50em = 800px
+    @include respond-to('min', 'screen-md') {
+      margin-top: 3.6rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+
+    // screen-hg = 81.25em = 1300px
+    @include respond-to('min', 'screen-hg') {
+      grid-template-columns: 70% 1fr;
+      grid-gap: 2.4rem;
+    }
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--color-neutral-30);
+    padding: 2.5rem 0 0.4rem;
+    margin-top: 2rem;
+
+    // screen-hg = 81.25em = 1300px
+    @include respond-to('min', 'screen-hg') {
+      justify-content: flex-start;
+    }
+
+    & > *:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+  }
+}
