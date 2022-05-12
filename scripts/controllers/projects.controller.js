@@ -1,12 +1,15 @@
-import projects from '../data/projects.data.js';
-import ProjectsView from '../view/projects.view.js';
+import ProjectsGridView from '../views/projects-grid.view.js';
+import ProjectPopupView from '../views/project-popup.view.js';
 
 const PROJECT_BTN_ID_BASE = 'projectBtn';
 
 export default class ProjectsController {
-  constructor() {
+  constructor(projects) {
     this.projects = projects;
-    this.projectsView = new ProjectsView(
+  }
+
+  buildProjectsGrid() {
+    const projectsGridView = new ProjectsGridView(
       'works',
       this.projects.map(
         ({
@@ -31,14 +34,29 @@ export default class ProjectsController {
         }),
       ),
     );
+    projectsGridView.render();
+    this.projects.forEach(({ id }) => {
+      const projectBtn = document.getElementById(
+        `${PROJECT_BTN_ID_BASE}-${id}`,
+      );
+
+      projectBtn.addEventListener('click', () => {
+        this.buildProjectPopup(id - 1);
+      });
+    });
   }
 
-  execute() {
-    this.projectsView.render();
-    this.projects.forEach(({ id }) => {
-      const projectBtn = document.getElementById(`${PROJECT_BTN_ID_BASE}-${id}`);
+  buildProjectPopup(projectIndex) {
+    const popupCancelBtnId = 'popup-cancel-btn';
+    const projectPopupView = new ProjectPopupView(
+      'root',
+      { ...this.projects[projectIndex], popupCancelBtnId },
+    );
+    projectPopupView.render();
 
-      projectBtn.addEventListener('click', () => console.log(`Im the project: ${id}`));
+    const popupCancelBtn = document.getElementById(popupCancelBtnId);
+    popupCancelBtn.addEventListener('click', () => {
+      projectPopupView.remove();
     });
   }
 }

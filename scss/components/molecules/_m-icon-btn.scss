@@ -8,4 +8,37 @@
   &:hover {
     opacity: 0.9;
   }
+
+  &--outline {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 0.8rem;
+    padding: 1.2rem 1.4rem;
+
+    // screen-hg = 81.25em = 1300px
+    @include respond-to('min', 'screen-hg') {
+      padding: 0.8rem 1.2rem;
+    }
+
+    span {
+      // white-space: nowrap;
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      background-color: var(--color-primary);
+      box-shadow: 0 0.8rem 1.6rem rgba(64, 83, 252, 0.24);
+      color: var(--white);
+    }
+
+    &:active {
+      background-color: var(--blue-dark-1);
+      color: var(--white);
+    }
+  }
 }

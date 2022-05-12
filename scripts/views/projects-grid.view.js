@@ -1,17 +1,11 @@
-const genProjectTechsListMarkup = (techs) => {
-  const projectTechsListMarkup = `
-    <ul class="m-overflow-list">
-      ${techs.reduce((acc, tech) => `${acc}<li><span class="a-label">${tech}</span></li>`, '')}
-    </ul>
-  `;
-  return projectTechsListMarkup;
-};
+import ProjectTechsListView from './project-techs-list.view.js';
 
 const genProjectMarkup = ({
   projectBtnId, name, description, featuredImg, client, topic, yearOfCreation, techs, isReversed,
 }) => {
+  const projectTechsListView = new ProjectTechsListView(null, techs);
   const projectMarkup = `
-    <div class="o-card ${isReversed ? 'o-card--reverse' : ''}">
+    <article class="o-card ${isReversed ? 'o-card--reverse' : ''}">
       <img
         src=${featuredImg}
         alt="Image of the ${name} Project"
@@ -36,24 +30,29 @@ const genProjectMarkup = ({
         <p class="o-card__text a-text a-text--sm">
           ${description}
         </p>
-        ${genProjectTechsListMarkup(techs)}
+        ${projectTechsListView.genMarkup()}
 
         <div class="o-card__action">
           <button id=${projectBtnId} type="button" class="a-btn">See Project</button>
         </div>
       </div>
-    </div>
+    </article>
   `;
   return projectMarkup;
 };
 
-export default class ProjectsView {
+export default class ProjectsGridView {
   constructor(parentElemId, projects) {
     this.parentElement = document.getElementById(parentElemId);
-    this.projectsMarkup = projects.reduce((acc, project) => `${acc}${genProjectMarkup(project)}`, '');
+    this.projects = projects;
+  }
+
+  genMarkup() {
+    return this.projects.reduce((acc, project) => `${acc}${genProjectMarkup(project)}`, '');
   }
 
   render() {
-    this.parentElement.innerHTML = this.projectsMarkup;
+    const projectsMarkup = this.genMarkup();
+    this.parentElement.insertAdjacentHTML('afterbegin', projectsMarkup);
   }
 }

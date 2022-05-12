@@ -1,7 +1,8 @@
 import ProjectsController from './controllers/projects.controller.js';
+import projects from './data/projects.data.js';
 
-const projectsController = new ProjectsController();
-projectsController.execute();
+const projectsController = new ProjectsController(projects);
+projectsController.buildProjectsGrid();
 
 const homeMainContainer = document.getElementById('home-main-container');
 const hamburguerMenu = document.getElementById('hamburger-menu');
