@@ -1,4 +1,4 @@
-import ProjectTechsListView from './project-techs-list.view.js';
+import ProjectTechsListView from './ProjectTechsListView.js';
 
 const genProjectMarkup = ({
   projectBtnId, name, description, featuredImg, client, topic, yearOfCreation, techs, isReversed,

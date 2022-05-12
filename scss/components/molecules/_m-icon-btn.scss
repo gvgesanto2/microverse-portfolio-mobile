@@ -9,6 +9,10 @@
     opacity: 0.9;
   }
 
+  &--primary {
+    color: var(--color-primary);
+  }
+
   &--outline {
     display: flex;
     align-items: center;

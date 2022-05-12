@@ -1,4 +1,5 @@
-import ProjectTechsListView from './project-techs-list.view.js';
+import MainContainerViewManager from './MainContainerViewManager.js';
+import ProjectTechsListView from './ProjectTechsListView.js';
 
 const genProjectPopupMarkup = (
   projectPopupId,
@@ -90,8 +91,9 @@ const genProjectPopupMarkup = (
 };
 
 export default class ProjectPopupView {
-  constructor(parentElemId, project) {
+  constructor(mainContainerId, parentElemId, project) {
     this.projectPopupId = 'project-popup';
+    this.mainContainerViewManager = new MainContainerViewManager(mainContainerId);
     this.parentElement = document.getElementById(parentElemId);
     this.project = project;
   }
@@ -102,11 +104,13 @@ export default class ProjectPopupView {
 
   render() {
     const projectPopupMarkup = this.genMarkup();
+    this.mainContainerViewManager.blur();
     this.parentElement.insertAdjacentHTML('afterbegin', projectPopupMarkup);
   }
 
   remove() {
     const projectPopup = document.getElementById(this.projectPopupId);
+    this.mainContainerViewManager.unblur();
 
     if (projectPopup) {
       projectPopup.remove();
