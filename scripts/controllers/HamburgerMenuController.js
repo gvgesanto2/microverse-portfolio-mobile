@@ -25,10 +25,10 @@ export default class HamburgerMenuController {
       hamburgerMenuViewManager.show();
     });
     addEventHandler(this.hamburgerCancelBtnId, 'click', () => {
-      hamburgerMenuViewManager.hide();
+      // hamburgerMenuViewManager.hide();
     });
     addEventHandlerToElemGroup(this.hamburguerMenuLinksSelector, 'click', () => {
-      hamburgerMenuViewManager.hide();
+      // hamburgerMenuViewManager.hide();
     });
   }
 }
