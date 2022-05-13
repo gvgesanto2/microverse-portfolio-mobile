@@ -2,9 +2,10 @@ import ProjectsController from './controllers/ProjectsController.js';
 import projects from './data/projects.data.js';
 import homepageMetaData from './data/homepage.data.js';
 import HamburgerMenuController from './controllers/HamburgerMenuController.js';
+import ContactFormController from './controllers/ContactFormController.js';
 
 const {
-  bodyElemId, mainContainerId, worksSectionId, hamburgerMenuMetaData,
+  bodyElemId, mainContainerId, worksSectionId, hamburgerMenuMetaData, contactFormMetaData,
 } = homepageMetaData;
 
 const projectsController = new ProjectsController(
@@ -20,3 +21,6 @@ const hamburgerMenuController = new HamburgerMenuController({
   mainContainerId,
 });
 hamburgerMenuController.initHamburgerMenu();
+
+const contactFormController = new ContactFormController(contactFormMetaData);
+contactFormController.initContactForm();

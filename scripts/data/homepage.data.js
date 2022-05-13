@@ -8,6 +8,10 @@ const homepageMetaData = {
     hamburgerCancelBtnId: 'hamburger-cancel-btn',
     hamburguerMenuLinksSelector: '.o-hamburger-menu__link',
   },
+  contactFormMetaData: {
+    formId: 'contact-form',
+    formInputGroupId: 'contact-form-input-group',
+  },
 };
 
 export default homepageMetaData;

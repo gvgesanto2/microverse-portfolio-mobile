@@ -24,6 +24,10 @@
   --grey-dark-2: #6b778c;
   --grey-dark-3: #67798e;
   --blue-dark-1: #2230d2;
+  --color-error: #ff3333;
+  --color-error-dark: #a62121;
+  --color-error-light: #ff8585;
+  --color-success: #4bb543;
   --color-primary: var(--color-primary-400);
   --color-primary-dark: var(--color-primary-500);
   /* Backgroud */
@@ -250,6 +254,23 @@ textarea {
   .a-data-input--textarea {
     height: 17rem;
     line-height: 2rem; }
+  .a-data-input--is-error {
+    border: 2px solid var(--color-error);
+    box-shadow: inset 0 1px 2px var(--color-error); }
+    .a-data-input--is-error:focus {
+      box-shadow: none; }
+  .a-data-input--is-success {
+    border: 2px solid var(--color-success);
+    box-shadow: inset 0 1px 2px var(--color-success); }
+    .a-data-input--is-success:focus {
+      box-shadow: none; }
+
+.a-status-msg {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 0.8rem 1.6rem;
+  margin: 0.4rem 0; }
 
 /* Import the molecule components */
 /* ICON BUTTON */
