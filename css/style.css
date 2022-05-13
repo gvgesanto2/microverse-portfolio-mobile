@@ -271,6 +271,11 @@ textarea {
   line-height: 2rem;
   padding: 0.8rem 1.6rem;
   margin: 0.4rem 0; }
+  .a-status-msg--is-error {
+    border: 1px solid var(--color-error);
+    border-radius: 0.8rem;
+    background-color: var(--color-error-light);
+    color: var(--color-error-dark); }
 
 /* Import the molecule components */
 /* ICON BUTTON */
