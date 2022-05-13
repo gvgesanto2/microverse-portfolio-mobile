@@ -6,7 +6,7 @@ const validateEmail = (email) => {
   if (email === email.toLowerCase() && email.trim() !== '') {
     return '';
   }
-  return 'Invalid email! Email field should be in lowercase.';
+  return 'Invalid email! It must be in lowercase.';
 };
 const hasValue = (value) => {
   if (value.trim() !== '') {
