@@ -344,12 +344,12 @@
           </p>
         </div>
         <div class="p-contact__content">
-          <form action="#" method="post" class="m-form">
-            <ul class="m-form__input-group">
+          <form id="contact-form" action="#" method="post" class="m-form">
+            <ul id="contact-form-input-group" class="m-form__input-group">
               <li>
                 <input
                   id="name"
-                  name="user_name"
+                  name="name"
                   type="text"
                   placeholder="Enter your name"
                   aria-label="Enter your name"
@@ -359,7 +359,7 @@
               <li>
                 <input
                   id="email"
-                  name="user_email"
+                  name="email"
                   type="email"
                   placeholder="Enter your email"
                   aria-label="Enter your email"
@@ -369,7 +369,7 @@
               <li>
                 <textarea
                   class="a-data-input a-data-input--textarea"
-                  name="user_message"
+                  name="message"
                   id="msg"
                   cols="30"
                   rows="10"
